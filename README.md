@@ -41,17 +41,6 @@ The Ticket Resolution System (TRS) is a web-based application designed to help o
 5. Admin updates the ticket status.
 6. Users can track their ticket progress through the dashboard.
 
-## System Workflow
-
-```mermaid
-flowchart TD
-    A[User] --> B[Register / Login]
-    B --> C[Create Ticket]
-    C --> D[Ticket Stored in Database]
-    D --> E[Admin Reviews Ticket]
-    E --> F[Admin Updates Status]
-    F --> G[User Tracks Ticket Progress]
-
 ## Project Structure
 
 ```
