@@ -41,19 +41,16 @@ The Ticket Resolution System (TRS) is a web-based application designed to help o
 5. Admin updates the ticket status.
 6. Users can track their ticket progress through the dashboard.
 
-User
- ↓
-Register / Login
- ↓
-Create Ticket
- ↓
-Ticket Stored in Database
- ↓
-Admin Reviews Ticket
- ↓
-Admin Updates Status
- ↓
-User Tracks Ticket Progress
+## System Workflow
+
+```mermaid
+flowchart TD
+    A[User] --> B[Register / Login]
+    B --> C[Create Ticket]
+    C --> D[Ticket Stored in Database]
+    D --> E[Admin Reviews Ticket]
+    E --> F[Admin Updates Status]
+    F --> G[User Tracks Ticket Progress]
 
 ## Project Structure
 
@@ -80,12 +77,14 @@ TRS-Project
 ```
 
 ## API Endpoints
-### Method	Endpoint	          Description
-POST	   /api/auth/sign-up	    Register new user
-POST	  /api/auth/login	        User login
-GET	    /api/ticket/user/{id}	  Get user tickets
-POST	  /api/ticket	            Create new ticket
-PUT	    /api/ticket/{id}	      Update ticket status
+
+| Method | Endpoint | Description |
+|------|------|------|
+| POST | /api/auth/sign-up | Register new user |
+| POST | /api/auth/login | User login |
+| GET | /api/ticket/user/{id} | Get user tickets |
+| POST | /api/ticket | Create new ticket |
+| PUT | /api/ticket/{id} | Update ticket status |
 
 ## How to Run the Project
 
