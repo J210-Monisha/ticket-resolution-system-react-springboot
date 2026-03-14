@@ -99,6 +99,22 @@ npm start
 ```
 Runs on : http://localhost:3000/
 
+## Demo Login Credentials
+
+You can use the following credentials to test the system.
+
+### Admin Login
+| Role | Username | Password |
+|-----|-----|-----|
+| Admin | Monisha | 1234 |
+
+### Customer Logins
+| Role | Username | Password |
+|-----|-----|-----|
+| Customer | Johnny | John123 |
+| Customer | Riya | Riya123 |
+
+> These credentials are provided for demonstration purposes only.
 
 ## Future Enhancements
 
